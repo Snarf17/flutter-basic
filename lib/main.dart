@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/widget/sample_container.dart';
+import 'package:learn_flutter/widget/sample_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,12 +26,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('HomePage'),
-        backgroundColor: Colors.deepOrange,
-        centerTitle: true,
-      ),
-      body: const SampleContainer(),
+      body: const SampleText(),
     );
   }
 }
