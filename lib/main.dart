@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/widget/sample_text.dart';
+import 'package:learn_flutter/widget/sample_img.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const SampleText(),
+      body: const SampleImage(),
     );
   }
 }
