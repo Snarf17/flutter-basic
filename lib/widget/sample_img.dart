@@ -15,6 +15,19 @@ class SampleImage extends StatelessWidget {
       body: Column(
         children: [
           Image.asset('assets/img/gambar.jpg'),
+          const CircleAvatar(
+            radius: 50,
+            backgroundImage: AssetImage('assets/img/gambar.jpg'),
+          ),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(50),
+            child: Image.asset(
+              'assets/img/gambar.jpg',
+              height: 100,
+              width: 100,
+              fit: BoxFit.fill,
+            ),
+          ),
           Container(
             margin: EdgeInsets.all(20),
             padding: EdgeInsets.all(12),
