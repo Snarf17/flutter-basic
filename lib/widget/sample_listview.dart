@@ -15,13 +15,13 @@ class SampleListview extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView.builder(
-        itemBuilder: (context, index) {
-          return Container(
-            height: 100,
-            color: Colors.orange[codeColor[index]],
-          );
-        },
-      ),
+          itemBuilder: (context, index) {
+            return Container(
+              height: 100,
+              color: Colors.orange[codeColor[index]],
+            );
+          },
+          itemCount: codeColor.length),
     );
   }
 }
