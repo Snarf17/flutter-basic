@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class SampleListview extends StatelessWidget {
   SampleListview({super.key});
@@ -12,16 +10,39 @@ class SampleListview extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Listview'),
+        backgroundColor: Colors.deepOrangeAccent,
+        leading: Icon(Icons.camera_alt_outlined),
+        actions: [
+          Container(
+            margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+            child: Icon(
+              Icons.message_outlined,
+              size: 26,
+            ),
+          )
+        ],
         centerTitle: true,
       ),
-      body: ListView.builder(
-          itemBuilder: (context, index) {
-            return Container(
-              height: 100,
-              color: Colors.orange[codeColor[index]],
-            );
-          },
-          itemCount: codeColor.length),
+      body: Container(
+        height: 100,
+        child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) {
+              return Container(
+                padding: EdgeInsets.all(8),
+                child: CircleAvatar(
+                  radius: 37,
+                  backgroundColor: Colors.deepOrangeAccent,
+                  child: CircleAvatar(
+                    radius: 35,
+                    backgroundImage:
+                        NetworkImage('https://i.pravatar.cc/300?img=$index'),
+                  ),
+                ),
+              );
+            },
+            itemCount: codeColor.length),
+      ),
     );
   }
 }
