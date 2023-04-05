@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/widget/sample_listview.dart';
-import 'package:learn_flutter/widget/sample_mapping_list.dart';
+import 'package:learn_flutter/widget/sample_date_time.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +26,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: MappingList(),
+      body: SampleDate(),
     );
   }
 }
