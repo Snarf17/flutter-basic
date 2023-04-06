@@ -3,6 +3,7 @@ import 'package:learn_flutter/widget/sample_dialog.dart';
 import 'package:learn_flutter/widget/sample_dismissible.dart';
 import 'package:learn_flutter/widget/sample_drawer.dart';
 import 'package:learn_flutter/widget/sample_grid_view.dart';
+import 'package:learn_flutter/widget/sample_model.dart';
 import 'package:learn_flutter/widget/sample_navigation.dart';
 import 'package:learn_flutter/widget/sample_routes.dart';
 import 'package:learn_flutter/widget/sample_switch.dart';
@@ -32,8 +33,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SampleSwitch(),
+    return Scaffold(
+      body: SampleModel(),
     );
   }
 }
