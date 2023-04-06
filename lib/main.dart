@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/widget/sample_date_time.dart';
+import 'package:learn_flutter/widget/sample_fitur_text_field.dart';
 import 'package:learn_flutter/widget/sample_tapbar.dart';
 import 'package:learn_flutter/widget/sample_text_field.dart';
 
@@ -28,7 +29,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SampleTextField(),
+      body: FiturTextField(),
     );
   }
 }
