@@ -11,6 +11,7 @@ class SampleDismissible extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dismissible"),
         centerTitle: true,
+        leading: BackButton(),
       ),
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(vertical: 5),

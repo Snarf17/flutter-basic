@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter/widget/sample_dialog.dart';
 import 'package:learn_flutter/widget/sample_dismissible.dart';
 import 'package:learn_flutter/widget/sample_grid_view.dart';
+import 'package:learn_flutter/widget/sample_navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SampleDismissible(),
+      body: SampleNavigation(),
     );
   }
 }
