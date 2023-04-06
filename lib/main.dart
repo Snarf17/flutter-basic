@@ -5,6 +5,7 @@ import 'package:learn_flutter/widget/sample_drawer.dart';
 import 'package:learn_flutter/widget/sample_grid_view.dart';
 import 'package:learn_flutter/widget/sample_navigation.dart';
 import 'package:learn_flutter/widget/sample_routes.dart';
+import 'package:learn_flutter/widget/sample_switch.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,8 +32,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SampleDrawer(),
+    return const Scaffold(
+      body: SampleSwitch(),
     );
   }
 }
