@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/widget/sample_date_picker.dart';
 import 'package:learn_flutter/widget/sample_dialog.dart';
 import 'package:learn_flutter/widget/sample_dismissible.dart';
 import 'package:learn_flutter/widget/sample_drawer.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.yellow,
       ),
       home: const HomePage(),
     );
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SampleModel(),
+      body: SampleDatePicker(),
     );
   }
 }
